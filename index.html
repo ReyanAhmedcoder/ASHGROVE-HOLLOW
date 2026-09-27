@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ASHGROVE HOLLOW — The Last Upload</title>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+  <div id="scene" class="dark">
+    <div class="layer" id="art"></div>
+    <div class="layer vignette"></div>
+    <div class="layer grain"></div>
+    <div class="layer flash"></div>
+  </div>
+  <div id="hotspots"></div>
+  <div id="hud">
+    <div id="rec">REC ● <span id="tc">00:00:14</span></div>
+    <div id="clock">ASHGROVE HOLLOW, RT.9</div>
+    <div id="batt">FLASHLIGHT ⚡ <span id="battpct">62%</span></div>
+    <div id="inv"></div>
+  </div>
+  <div id="dock">
+    <div id="textbox">
+      <div id="say"></div>
+      <div id="choices"></div>
+    </div>
+  </div>
+  <div id="jumpscare"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="90" fill="#9c1c1c" opacity=".15"/><circle cx="70" cy="90" r="10" fill="#fff"/><circle cx="130" cy="90" r="10" fill="#fff"/><path d="M60 140 Q100 110 140 140" stroke="#fff" stroke-width="4" fill="none"/></svg></div>
+  <div id="caught" class="overlay" style="display:none;"></div>
+
+  <div class="overlay" id="titleScreen">
+    <h1>ASHGROVE HOLLOW</h1>
+    <p>Three weeks ago your brother Elias posted his final livestream from an abandoned farmhouse on Route 9. Police found nothing. You found the upload cached on his old phone — timestamped an hour <em>after</em> he was reported missing. You're standing where he stood. Move the light. Find him.</p>
+    <button class="btn" id="startBtn">▶ BEGIN THE TAPE</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
